@@ -1,3 +1,5 @@
+package seminars;
+
 public class SeminarOne {
     public static void taskOne() {
         int[] array = new int[4];
