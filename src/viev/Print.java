@@ -7,4 +7,8 @@ public class Print {
     public static void PrintInConsole(int a, int b, double c){
        System.out.printf("Ответ: %d / %d = %f", a, b, c);
     }
+
+    public static void PrintInConsole(int age){
+        System.out.printf("Вам %d годиков", age);
+    }
 }

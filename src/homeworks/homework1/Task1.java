@@ -5,6 +5,7 @@
 package homeworks.homework1;
 
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Task1 {
@@ -16,8 +17,15 @@ public class Task1 {
         return (double) a / b;
     }
 
-    public static int inputUser(String text) {
+    public static Integer inputUser(String text) {
         System.out.print(text + ": ");
-        return new Scanner(System.in).nextInt();
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            return scanner.nextInt();
+        } catch (InputMismatchException e) {
+            System.out.println("Некорректное значение, введите целое число.");
+            return inputUser(text);
+        }
     }
 }

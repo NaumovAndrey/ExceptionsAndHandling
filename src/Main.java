@@ -1,4 +1,5 @@
 import homeworks.homework1.Task1;
+import homeworks.homework1.Task2;
 import viev.Print;
 
 public class Main {
@@ -25,10 +26,18 @@ public class Main {
 
         // ---------- homework seminar 1 ----------
         // task 1
-        int a = Task1.inputUser("Введите a");
-        int b = Task1.inputUser("Введите b");
 
-        double difference = Task1.division(a, b);
-        Print.PrintInConsole(a, b, difference);
+        //int a = Task1.inputUser("Введите a");
+        //int b = Task1.inputUser("Введите b");
+
+        //double difference = Task1.division(a, b);
+        //Print.PrintInConsole(a, b, difference);
+
+
+        // ---------- homework seminar 1 ----------
+        // task 2
+
+        Task2.checkingNumber();
+
     }
 }
