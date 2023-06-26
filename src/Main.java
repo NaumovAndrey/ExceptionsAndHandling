@@ -1,5 +1,6 @@
 import homeworks.homework1.Task1;
 import homeworks.homework1.Task2;
+import homeworks.homework1.Task3;
 import viev.Print;
 
 public class Main {
@@ -37,7 +38,12 @@ public class Main {
         // ---------- homework seminar 1 ----------
         // task 2
 
-        Task2.checkingNumber();
+        //Task2.checkingNumber();
+        //p.s. исключение NumberFormatException у меня не срабатывает, пишет бесконечность
 
+        // ---------- homework seminar 1 ----------
+        // task 3
+
+        Task3.sumOfNambers();
     }
 }

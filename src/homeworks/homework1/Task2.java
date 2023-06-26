@@ -12,5 +12,6 @@ public class Task2 {
     public static void checkingNumber() {
         Integer age = Task1.inputUser("Сколько Вам годиков? ");
         Print.PrintInConsole(age);
+        // обработка исключения в первой задаче метод inputUser (ошибка ловиться при вводе)
     }
 }
