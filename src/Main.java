@@ -1,6 +1,7 @@
 import homeworks.homework1.Task1;
 import homeworks.homework1.Task2;
 import homeworks.homework1.Task3;
+import lessons.lesson2.Application;
 import viev.Print;
 
 public class Main {
@@ -44,6 +45,23 @@ public class Main {
         // ---------- homework seminar 1 ----------
         // task 3
 
-        Task3.sumOfNambers();
+        //Task3.sumOfNambers();
+
+        // ---------- lesson 2 ----------
+
+        // NullPointerException (обращение к нулевой переменной)
+        //Application.nullPointerException();
+
+        //ClassCastException (Неверное приведение типов, т.е. объект типа String не может быть преобразован к объекту типа file)
+        //Application.classCastException();
+
+        //NumberFormatException (преобразование строки в число)
+        //Application.numberFormatException();
+
+        //UnsupportedOperationException (неизменяемый объект)
+        //Application.unsupportedOperationException();
+
+        //
+
     }
 }
