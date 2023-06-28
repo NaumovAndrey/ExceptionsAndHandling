@@ -25,6 +25,7 @@ public class Task1 {
             return scanner.nextInt();
         } catch (InputMismatchException e) {
             System.out.println("Некорректное значение, введите целое число.");
+            //scanner.nextLine();
             return inputUser(text);
         }
     }
