@@ -1,6 +1,6 @@
 package seminars;
 
-public class SeminarOne {
+public class S1 {
     public static void taskOne() {
         int[] array = new int[4];
         try {

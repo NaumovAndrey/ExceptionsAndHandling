@@ -1,12 +1,16 @@
-import homeworks.homework1.Task1;
-import homeworks.homework1.Task2;
-import homeworks.homework1.Task3;
-import lessons.lesson2.Application;
+import homeworks.homework2.Task1;
+import homeworks.homework2.Task2;
+import homeworks.homework2.Task3;
+import input.Input;
+import seminars.MyException;
+import seminars.Password;
+import seminars.Throw;
 import viev.Print;
 
-public class Main {
-    public static void main(String[] args) {
+import javax.swing.text.View;
 
+public class Main {
+    public static void main(String[] args) throws MyException {
         //---------- seminar 1 ----------
 
         //seminars.SeminarOne.taskOne(); // Блок catch
@@ -61,7 +65,58 @@ public class Main {
         //UnsupportedOperationException (неизменяемый объект)
         //Application.unsupportedOperationException();
 
-        //
+        //Дописать блок finaly с лекции (скрины кода)
+
+        // ---------- seminar 2 ----------
+        //task 1
+
+        /*
+        try {
+            Throw.myInput(5);
+
+        } catch (MyException e){
+            System.out.println("Ошибка " + e.getMessage());
+        } finally {
+            System.out.println("init finally");
+        }*/
+
+        // ---------- seminar 2 ----------
+        //task 2
+
+        /*String value = Password.checkPass();
+        System.out.println("You pass: " + value);*/
+
+        // ---------- homework seminar 2 ----------
+        // task 1
+
+        /*
+        int valueA = Input.inputUs("Введите число: ", Integer.class);
+        try {
+            Task1.positiveNumbers(valueA);
+            System.out.println("Число корректно.");
+        } catch (MyException e) {
+            System.out.println(e.getMessage());
+        } */
+
+        // ---------- homework seminar 2 ----------
+        // task 2
+
+        /*
+        int valueA = Input.inputUs("Введите делимое: ", Integer.class);
+        int valueB = Input.inputUs("Введите делитель: ", Integer.class);
+
+        try {
+            double result = Task2.dividingNumbers(valueA, valueB);
+            Print.PrintInConsole(valueA, valueB, result);
+        } catch (MyException e) {
+            System.out.println(e.getMessage());
+        }*/
+
+
+        // ---------- homework seminar 2 ----------
+        // task 3
+
+        Task3.checks();
 
     }
 }
