@@ -1,13 +1,14 @@
 import homeworks.homework2.Task1;
 import homeworks.homework2.Task2;
 import homeworks.homework2.Task3;
+import homeworks.homework3.PowerCalculator;
 import input.Input;
-import seminars.MyException;
-import seminars.Password;
-import seminars.Throw;
+import seminars.*;
 import viev.Print;
 
 import javax.swing.text.View;
+
+import static seminars.SafeDivisionCalculator.handleDivisionByZeroException;
 
 public class Main {
     public static void main(String[] args) throws MyException {
@@ -116,7 +117,26 @@ public class Main {
         // ---------- homework seminar 2 ----------
         // task 3
 
-        Task3.checks();
+        /*Task3.checks();*/
+
+        // ---------- seminar 3 ----------
+
+        /*
+        int valueA = Input.inputUs("число а: ", Integer.class);
+        int valueB = Input.inputUs("число B: ", Integer.class);
+
+        try {
+            double result = SafeDivisionCalculator.divideNumbers(valueA, valueB);
+            System.out.println("Результат деления: " + result);
+        } catch (DivisionByZeroException e){
+            handleDivisionByZeroException(e);
+        }*/
+
+        // ---------- homework seminar 3 ----------
+        //task 1
+
+        int result = PowerCalculator.calculatePower();
+        System.out.println(result);
 
     }
 }
