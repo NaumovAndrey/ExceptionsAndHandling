@@ -1,6 +1,9 @@
 import homeworks.homework2.Task1;
 import homeworks.homework2.Task2;
 import homeworks.homework2.Task3;
+import homeworks.homework3.BankAccount;
+import homeworks.homework3.InsufficientFundsException;
+import homeworks.homework3.InvalidAmountException;
 import homeworks.homework3.PowerCalculator;
 import input.Input;
 import seminars.*;
@@ -135,8 +138,25 @@ public class Main {
         // ---------- homework seminar 3 ----------
         //task 1
 
+        /*
         int result = PowerCalculator.calculatePower();
-        System.out.println(result);
+        System.out.println(result);*/
 
+        // ---------- homework seminar 3 ----------
+        //task 2
+
+        BankAccount account1 = new BankAccount(98045);
+        BankAccount account2 = new BankAccount(5980);
+
+        try {
+            // Перевод средств со счета 1 на счет 2
+            double transferAmount = 900;
+            account1.transfer(transferAmount, account2);
+            System.out.println("Перевод успешно выполнен");
+            System.out.println("Баланс счета 1: " + account1.getBalance());
+            System.out.println("Баланс счета 2: " + account2.getBalance());
+        } catch (InvalidAmountException | InsufficientFundsException e) {
+            System.out.println("Ошибка при переводе: " + e.getMessage());
+        }
     }
 }

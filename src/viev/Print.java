@@ -11,4 +11,9 @@ public class Print {
     public static void PrintInConsole(int age){
         System.out.printf("Вам %d годиков", age);
     }
+
+    public static void PrintInConsole(int a, int b, int c) {
+        System.out.printf("Ответ: %d^%d = %d", a, b, c);
+    }
 }
+
